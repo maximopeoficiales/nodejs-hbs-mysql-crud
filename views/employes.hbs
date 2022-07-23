@@ -52,7 +52,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="flex-row d-flex">
-                <a class="navbar-brand mb-1" href="#">NODE CRUD</a>
+                <a class="navbar-brand mb-1" href="#">{{msg}}</a>
                 <button class="hidden-md-up navbar-toggler" data-toggle="offcanvas" title="Toggle responsive left sidebar" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -95,12 +95,11 @@
                     <tbody>
                         {{#each results}}
                             <tr>
-                                <td>{{ product_id }}</td>
-                                <td>{{ product_name }}</td>
-                                <td>{{ product_price }}</td>
+                                <td>{{ dni }}</td>
+                                <td>{{ name }}</td>
+                                <td>{{ lastname }}</td>
                                 <td>
-                                    <a href="javascript:void(0);" class="btn btn-sm btn-info edit" data-id="{{ product_id }}" data-product_name="{{ product_name }}" data-product_price="{{ product_price }}">Edit</a>
-                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger delete" data-id="{{ product_id }}">Delete</a>
+                                    {{ occupation }}
                                 </td>
                             </tr>
                         {{/each}}
